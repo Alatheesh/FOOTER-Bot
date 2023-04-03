@@ -49,7 +49,7 @@ async def callback_data(client, update: CallbackQuery):
         await update.message.edit_text(
             f"""<b>🔻AutoCaption Bot🔻\n\nTake a look at the end of the video\nIt has to say\n\n🖥️Youtube Tutorial Video\n\nHeroku 👉 https://dashboard.heroku.com/\n\n {MT}</b>""",
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="{html}"
         )
 
     if query_data == "about":
@@ -68,7 +68,7 @@ async def callback_data(client, update: CallbackQuery):
         await update.message.edit_text(
             """<b>➪ Bot Name</b> AutoCaptionBot\n\n➪ <b>Framework : Pyrogram</b>\n\n➪<b> Language : Python</b>\n\n➪<b> Server : Heroku</b> \n\n<b>➪ Version : 2.0.1</b>\n\n<b>➪ Source Code  : <a href="https://t.me/llathu63035">Touch Me 🤗</a>\n\n➪ Developer :  @TG_LATHEESH\n\n➪ Credits : <a href="https://t.me/TG_LATHEESH">Credits</a></b>""",
             reply_markup=reply_markup,
-            parse_mode="html"
+            parse_mode="{html}"
         )
 
     elif query_data == "motech":
